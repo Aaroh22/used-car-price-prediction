@@ -12,11 +12,11 @@ The project covers the complete ML workflow — from data cleaning and explorato
 
 ## Overview
 
-The goal of this project was to take the machine learning concepts I had learned and apply them to a complete real-world workflow rather than stopping at model training inside a notebook.
+I built and deployed the project using a dataset of more than **15,000 used-car listings**, compared **5 regression models**, and used **leakage-safe 5-fold cross-validation** and hyperparameter tuning to improve model performance.
 
-The dataset contains more than 15,000 used-car listings. I cleaned and explored the data, built a preprocessing workflow, trained five regression models, tuned the stronger models using cross-validation, and deployed the final XGBoost model through a Streamlit application.
+The final tuned XGBoost model achieved approximately **₹93K test MAE** with an **R² score of 0.927**.
 
-The deployed application accepts vehicle details from the user and returns an estimated resale value in real time.
+The project also includes a reusable preprocessing and inference pipeline for categorical encoding, numerical scaling, and model prediction, which is integrated into an interactive Streamlit web application.
 
 ---
 
@@ -450,7 +450,6 @@ The model does not currently account for factors such as:
 Predictions should therefore be treated as estimates rather than guaranteed selling prices.
 
 ---
-
 ## Future Improvements
 
 Possible extensions to the project include:
